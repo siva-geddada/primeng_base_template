@@ -1,0 +1,12 @@
+<section>
+    <nav class="side-nav">
+        @for (item of menuItems; track item.label) {
+        <ul>
+            <li [routerLink]="item.route" routerLinkActive="active">
+                <i class="{{ item.icon }}"></i>
+                <span>{{ item.label }}</span>
+            </li>
+        </ul>
+        }
+    </nav>
+</section>

@@ -5,9 +5,10 @@ import { Component, computed, inject, PLATFORM_ID } from '@angular/core';
 import { AppNewsComponent } from "../news/app.news.component";
 import { TopBarComponent } from '../top-bar/top-bar.component';
 import { LayoutService } from '../../../core/services/layout.service';
+import { SideNavComponent } from "../sideNav/sideNav.component";
 @Component({
   selector: 'app-layout',
-  imports: [NgClass, RouterOutlet, TopBarComponent, AppNewsComponent],
+  imports: [NgClass, RouterOutlet, TopBarComponent, AppNewsComponent, SideNavComponent],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss'
 })
