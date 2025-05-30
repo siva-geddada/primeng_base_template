@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DEVSPHERE</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>
+    (function () {
+        const APP_CONFIG_KEY = 'APP_STATE_CONFIGS';
+        const storedConfig = localStorage.getItem(APP_CONFIG_KEY);
+
+        if (storedConfig) {
+            const parsedConfig = JSON.parse(storedConfig);
+            if (parsedConfig.darkTheme) {
+                document.documentElement.classList.add('p-dark');
+            } else {
+                document.documentElement.classList.remove('p-dark');
+            }
+        }
+    })();
+</script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>

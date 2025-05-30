@@ -1,0 +1,70 @@
+<div class="layout-topbar">
+    <div class="layout-topbar-inner">
+        <div class="layout-topbar-logo-container">
+            <a [routerLink]="['/']" class="layout-topbar-logo" aria-label="PrimeNG Logo">
+                <svg
+                    width="150"
+                    height="50"
+                    viewBox="0 0 150 50"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <text
+                        x="-10"
+                        y="40"
+                        font-family="Operator Mono"
+                        font-weight="600"
+                        font-size="35"
+                        fill="var(--high-contrast-text-color)">
+                        Prime
+                    </text>
+                    <text
+                        x="90"
+                        y="40"
+                        font-family="Operator Mono"
+                        font-weight="600"
+                        font-size="35"
+                        fill="var(--p-primary-color)">
+                        NG
+                    </text>
+                </svg>
+            </a>
+        </div>
+
+        <ul class="layout-topbar-items">
+            <li>
+                <div id="docsearch"></div>
+            </li>
+            <li>
+                <a
+                    href="https://github.com/primefaces/primeng"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="layout-topbar-item">
+                    <i class="pi pi-github text-surface-700 dark:text-surface-100"></i>
+                </a>
+            </li>
+            @if(showConfigurator){
+            <li class="relative">
+                <button
+                    type="button"
+                    class="layout-topbar-item config-item"
+                    enterActiveClass="animate-scalein"
+                    enterFromClass="hidden"
+                    leaveActiveClass="animate-fadeout"
+                    leaveToClass="hidden"
+                    pStyleClass="@next"
+                    [hideOnOutsideClick]="true">
+                    <i class="pi pi-palette"></i>
+                </button>
+                <app-configurator />
+            </li>
+            }
+            <li>
+                <button type="button" class="layout-topbar-item" (click)="toggleDarkMode()">
+                    <i
+                        class="pi"
+                        [ngClass]="{ 'pi-moon': isDarkMode(), 'pi-sun': !isDarkMode() }"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+@use "primeicons/primeicons.css";
+@use "./assets/styles/global.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font{
+  font-family: "Operator Mono", Consolas, "Courier New", monospace;
+}
+
+.anton{
+  font-family: "Poppins", sans-serif; // Use Anton with a sans-serif fallback
+  font-weight: normal;
+  font-style: normal;
+}
+/* Fira Code */
+@font-face {
+  font-family: 'Fira Code';
+  src: url('./assets/fonts/FiraCode-Regular.ttf') format('truetype');
+}
+
+/* JetBrains Mono */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./assets/fonts/JetBrainsMono-LightItalic.ttf') format('truetype');
+}
+
+/* Operator Mono */
+@font-face {
+  font-family: 'Operator Mono';
+  src: url('./assets/fonts/OperatorMonoLig-Book.otf') format('truetype');
+}
+
+/* Cascadia Code */
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('./assets/fonts/CascadiaCode.ttf') format('truetype');
+}
