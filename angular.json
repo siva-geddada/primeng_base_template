@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "PrimeNGuild:production"
+              "buildTarget": "PrimeNG:build:production"
             },
             "development": {
-              "buildTarget": "PrimeNGuild:development"
+              "buildTarget": "PrimeNG:build:development"
             }
           },
           "defaultConfiguration": "development"
