@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "DEVSPHERE": {
+    "PrimeNG": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/devsphere",
+            "outputPath": "dist/PrimeNG
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "DEVSPHERE:build:production"
+              "buildTarget": "PrimeNGuild:production"
             },
             "development": {
-              "buildTarget": "DEVSPHERE:build:development"
+              "buildTarget": "PrimeNGuild:development"
             }
           },
           "defaultConfiguration": "development"
